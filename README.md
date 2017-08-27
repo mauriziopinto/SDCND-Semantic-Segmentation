@@ -1,6 +1,36 @@
-# Semantic Segmentation
+# SDCND-Semantic-Segmentation-Project
+Self-Driving Car Engineer Nanodegree Program
+
+[image1]: ./runs/1503839898.2681618/um_000005.png
+[image2]: ./runs/1503839898.2681618/um_000014.png
+[image3]: ./runs/1503839898.2681618/um_000095.png
+
+## Summary
+
+This repository contains a Python implementation of a scene semantic segmentation. It has been implemented as part of the Udacity Self-Driving Car Engineer Nanodegree Program.
+
+
 ### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
+In this project, I labeled the pixels of a road in images using a Fully Convolutional Network (FCN).
+
+## Example results
+
+Frame 000005               |  Frame 000014            |  Frame 000095
+:-------------------------:|:------------------------:|:------------------------:
+![Frame 000005][image1]    | ![Frame 000014][image2]  | ![Frame 000095][image3]
+
+## Implementation
+
+The implementation is based on the FCN-8 architecture developed at Berkeley (https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) and described in the Udacity lessons.
+
+## Notes
+
+After some tries, hyperparameters have been set as follows:
+
+* learning rate: 0.0001
+* epochs: 20
+* batch size: 1
+* dropout: 0.75
 
 ### Setup
 ##### Frameworks and Packages
